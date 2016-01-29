@@ -1,0 +1,33 @@
+{
+  "name": "apikeeper",
+  "version": "0.0.1",
+  "description": "API keeper",
+  "main": "bin/app.js",
+  "author": {
+    "name": "SuperPaintman",
+    "email": "superpaintmandeveloper@gmail.com",
+    "url": "http://flatdev.ru/"
+  },
+  "scripts": {
+    "start": "tsc -w -p ./",
+    "build": "tsc -p ./",
+    "test": "mocha ./bin/test",
+    "test-ci": "istanbul cover ./node_modules/mocha/bin/_mocha ./bin/test",
+    "prepublish": "npm run build && npm run test"
+  },
+  "keywords": [
+    "API"
+  ],
+  "files": [
+    "development",
+    "bin",
+    "README.md",
+    "tsd.json",
+    "tsconfig.json"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuperPaintman/apikeeper.git"
+  }
+}
